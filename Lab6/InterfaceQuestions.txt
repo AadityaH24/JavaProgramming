@@ -1,0 +1,45 @@
+Question 1
+
+Assume that there is a part in a machine having three side measurements s1, s2, s3. Its inner and
+outer vloumes are found using the following formulae:
+inner volume = 1/3 π s1*s2*s3
+outer volume = 4/3 π s1*s2*s3
+Define an interface volume which has two methods innerVolume and outerVolume. Define a class
+Part which implements this interface, having required attributes and methods, with suitable
+constructor.
+The show() method is used to display all the attributes of the Part class. 
+
+Question 2
+1. Create the Animal class, which is the abstract superclass of all animals.
+➢ Declare a protected integer attribute called legs, which records the number of legs for
+this animal.
+➢ Define a protected constructor that initializes the legs attribute.
+➢ Declare an abstract method eat.
+➢ Declare a concrete method walk that prints out something about how the animals walks
+(include the number of legs).
+2. Create the Spider class.
+➢ The Spider class extends the Animal class.
+➢ Define a default constructor that calls the superclass constructor to specify that all
+spiders have eight legs.
+➢ Implement the eat method.
+3. Create the Pet interface specified by the UML diagram.
+4. Create the Cat class that extends Animal and implements Pet.
+➢ This class must include a String attribute to store the name of the pet.
+➢ Define a constructor that takes one String parameter that specifies the cat's name. This
+constructor must also call the superclass constructor to specify that all cats have four
+legs.
+➢ Define another constructor that takes no parameters. Have this constructor call the
+previous constructor (using the this keyword) and pass an empty string as the argument.
+➢ Implement the Pet interface methods.
+➢ Implement the eat method.
+5. Create the Fish class. Override the Animal methods to specify that fish can't walk and don't
+have legs.
+6. Create an TestAnimals program. Have the main method create and manipulate instances of
+the classes you created above. Start with:
+Fish d = new Fish();
+Cat c = new Cat("Fluffy");
+Animal a = new Fish();
+Animal e = new Spider();
+Pet p = new Cat();
+7. Experiment by: a) calling the methods in each object, b) casting objects, c) using
+polymorphism, and d) using super to call super class methods. 
