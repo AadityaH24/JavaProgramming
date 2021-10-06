@@ -1,0 +1,64 @@
+Question 1
+Create a TeeShirt class for Toby’s Tee Shirt Company. Fields include an order number, size,
+color, and price. Create set methods for the order number, size, and color and get methods
+for all four fields. The price is determined by the size: $22.99 for XXL or XXXL, and $19.99
+for all other sizes. Create a subclass named CustomTee that descends from TeeShirt and
+includes a field to hold the slogan requested for the shirt, and include get and set methods
+this field.
+Write an application that creates two objects of each class, and demonstrate that all the
+methods work correctly. Save the files as TeeShirt.java, CustomTee.java, and
+DemoTees.java.
+
+Question 2
+The developers of a free online game named Sugar Smash have asked you to develop a
+class named SugarSmashPlayer that holds data about a single player. The class contains
+the following fields: the player’s integer ID number, a String screen name, and an array of
+integers that stores the highest score achieved in each of 10 game levels. Include get and
+set methods for each field. The get and set methods for the scores should each require
+two parameters—one that represents the score achieved and one that represents the
+game level to be retrieved or assigned. Display an error message if the user attempts to
+assign or retrieve a score from a level that is out of range for the array of scores.
+Additionally, no level except the first one should be set unless the user has earned at least
+100 points at each previous level. If a user tries to set a score for a level that is not yet
+available, issue an error message.
+Create a class named PremiumSugarSmashPlayer that descends from SugarSmashPlayer.
+This class is instantiated when a user pays $2.99 to have access to 40 additional levels of
+play. As in the free version of the game, a user cannot set a score for a level unless the
+user has earned at least 100 points at all previous levels.
+Create a program that instantiates several objects of each type and demonstrates the
+methods. Save the files as SugarSmashPlayer.java, PremiumSugarSmashPlayer.java, and
+DemoSugarSmash.java
+
+Question 3
+Create a class named CollegeCourse that includes data fields that hold the department
+(for example, ENG), the course number (for example, 101), the credits (for example, 3), and
+the fee for the course (for example, $360). All of the fields are required as arguments to
+the constructor, except for the fee, which is calculated at $120 per credit hour. Include a
+display() method that displays the course data. Create a subclass named LabCourse that
+adds $50 to the course fee. Override the parent class display() method to indicate that the
+course is a lab course and to display all the data.
+Write an application named UseCourse that prompts the user for course information. If
+the user enters a class in any of the following departments, create a LabCourse: BIO, CHM,
+CIS, or PHY. If the user enters any other department, create a CollegeCourse that does not
+include the lab fee. Then display the course data. Save the files as CollegeCourse.java,
+LabCourse.java, and UseCourse.java.
+Question 4
+Create a class named Blanket with fields for a blanket’s size, color, material, and price.
+Include a constructor that sets default values for the fields as Twin, white, cotton, and
+$30.00. Include a set method for each of the first three fields. The method that sets size
+adds $10 to the base price for a double blanket, $25 for a queen blanket, and $40 for a
+king. The method that sets the material adds $20 to the price for wool and $45 to the price
+for cashmere. In other words, the price for a king-sized cashmere blanket is $115.
+Whenever the size or material is invalid, reset the blanket to the default values. Include a
+toString() method that returns a description of the blanket. Save the file as Blanket.java.
+b. Create a child class named ElectricBlanket that extends Blanket and includes two
+additional fields: one for the number of heat settings and one for whether the electric
+blanket has an automatic shutoff feature. Default values are one heat setting and no
+automatic shutoff. Include get and set methods for the fields. Do not allow the number of
+settings to be fewer than one or more than five; if it is, use the default setting of 1. Add a
+$5.75 premium to the price if the blanket has the automatic shutoff feature. Also
+include a toString() method that calls the parent class toString() method and combines the
+returned value with data about the new fields to return a complete description of features.
+Save the file as ElectricBlanket.java.
+c. Create an application that declares a blanket of each type and display their details in
+table format.
