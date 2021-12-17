@@ -1,0 +1,34 @@
+1. Write a short program that prints "Hello world" from a thread.
+Now modify the program to print "Hello world" five times, once from each
+of five different threads.
+Now modify the printed string to include the thread number; ensure that all
+threads have a unique thread number.
+2. Write a short program in which two threads both increment a shared integer
+repeatedly, without proper synchronisation, 1,000,000 times, printing the
+result at the end of the program.
+Now modify the program to use synchronized to ensure that increments on the
+shared variable are atomic.
+3. We have seen several examples of producer-consumer implemented using a
+number of different synchronisation primitives in pseudo-code. Implement a
+Producer-Consumer class using synchronized, wait(), and notify() in Java.
+4. Data races occur when there is insufficient synchronisation around composite
+operations. Write a short program that illustrates a data race.
+5. Write a Java application to read a number ‘n’ and create two threads, where
+the 1st thread displays the first ‘n’ fibonacci numbers and the 2nd thread
+displays the prime factors of the number ‘n’. Observe the output of the two
+Threads when they are not synchronized.
+6. Modify the above program to synchronize the two Threads and observe the
+output.
+7. Modify Q5 to ensure that the user enters a positive integer and throw a
+InvalidNumberException for that class if the user does not enter valid
+number. Catch the InvalidNumberException and then display an appropriate
+message.
+8. Which integer between 1 and 10000 has the largest number of divisors, and
+how many divisors does it have? Write a program to find the answers and print
+out the results. It is possible that several integers in this range have the same,
+maximum number of divisors. Your program only has to print out one of them.
+9. Now write a program that uses multiple threads to solve the same problem,
+but for the range 1 to 100000. By using threads, your program will take less
+time to do the computation when it is run on a multiprocessor computer. At
+the end of the program, output the elapsed time, the integer that has the largest
+number of divisors, and the number of divisors that it has.
